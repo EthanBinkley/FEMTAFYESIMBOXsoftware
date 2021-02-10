@@ -1,0 +1,48 @@
+{
+	"make_errors": 1,
+	"frequency": 20,
+	"sensor": {
+		"thermal": {
+			"channels": [0x4, 0x5, 0x6, 0x7]
+		}
+		"pressure": {
+			"channels": [0x0, 0x1, 0x2, 0x3]
+		}
+		"mass spec": {
+			"channels": [0x0, 0x1]
+		}
+		"infrared flow": {
+			"channels": [0x2, 0x3]
+		}
+	}
+	"fail": {
+		"thermal": {
+			"channels": [0x4, 0x5, 0x6, 0x7]
+			"time": 60,
+			"fail_type": "toggle"
+			"repeat": 1
+			"repeat interval": 15
+		}
+		"pressure": {
+			"channels": [0x0, 0x1, 0x2, 0x3]
+			"time": 60,
+			"fail_type": "toggle"
+			"repeat": 0
+			"repeat interval": 30
+		}
+		"mass spec": {
+			"channels": [0x0, 0x1]
+			"time": 60,
+			"fail_type": "toggle"
+			"repeat": 0
+			"repeat interval": 45
+		}
+		"infrared flow": {
+			"channels": [0x2, 0x3]
+			"time": 60,
+			"fail_type": "toggle"
+			"repeat": 0
+			"repeat interval": 60
+		}
+	}
+}
